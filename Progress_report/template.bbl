@@ -1,0 +1,31 @@
+\begin{thebibliography}{xx}
+
+\harvarditem{Chen and Varshney}{2004}{chen2004qos}
+Chen, D. and Varshney, P.~K.: 2004, Qos support in wireless sensor networks: A
+  survey., {\em International Conference on Wireless Networks}, Vol. 233,
+  pp.~1--7.
+
+\harvarditem{Heegaard and Trivedi}{2009}{heegaard2009network}
+Heegaard, P.~E. and Trivedi, K.~S.: 2009, Network survivability modeling, {\em
+  Computer Networks} {\bf 53}(8),~1215--1234.
+
+\harvarditem[Jain et~al.]{Jain, Demmer, Patra and Fall}{2005}{jain2005using}
+Jain, S., Demmer, M., Patra, R. and Fall, K.: 2005, Using redundancy to cope
+  with failures in a delay tolerant network, {\em ACM SIGCOMM computer
+  communication review} {\bf 35}(4),~109--120.
+
+\harvarditem[Mohammad et~al.]{Mohammad, Hutchison and
+  Sterbenz}{2006}{mohammad2006poster}
+Mohammad, A.~J., Hutchison, D. and Sterbenz, J.~P.: 2006, Poster: Towards
+  quantifying metrics for resilient and survivable networks, {\em Proceedings
+  of the 14th IEEE International Conference on Network Protocols (ICNP 2006).
+  Santa Barbara, California, USA}, pp.~17--18.
+
+\harvarditem[Sterbenz et~al.]{Sterbenz, Hutchison, {\c{C}}etinkaya, Jabbar,
+  Rohrer, Sch{\"o}ller and Smith}{2010}{sterbenz2010resilience}
+Sterbenz, J.~P., Hutchison, D., {\c{C}}etinkaya, E.~K., Jabbar, A., Rohrer,
+  J.~P., Sch{\"o}ller, M. and Smith, P.: 2010, Resilience and survivability in
+  communication networks: Strategies, principles, and survey of disciplines,
+  {\em Computer Networks} {\bf 54}(8),~1245--1265.
+
+\end{thebibliography}

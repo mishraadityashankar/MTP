@@ -1,0 +1,162 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{amsmath,amsfonts,amssymb,amsthm,hyperref,color,graphicx}
+\usepackage{enumerate}
+\usepackage{newlfont}
+\usepackage[round]{natbib}
+% bullets and enumerations
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\cdot$}
+\renewcommand{\labelitemiii}{$\diamond$}
+\renewcommand{\labelitemiv}{$\ast$}
+% for circle $\circ$
+% set margin -------------------------------------------------------------
+\oddsidemargin=-.1in
+\evensidemargin=.1in
+\textwidth=6.2in
+\topmargin=-.5in
+\textheight=9in
+%\parindent=0in
+%\pagestyle{plain}
+%\linespread{1.3}
+%% My definition
+%\newcommand{\mvec}[1]{\mbox{\bfseries\itshape #1}}
+
+% Line spacing -----------------------------------------------------------
+\newlength{\defbaselineskip}
+\setlength{\defbaselineskip}{\baselineskip}
+\newcommand{\setlinespacing}[1]%
+           {\setlength{\baselineskip}{#1 \defbaselineskip}}
+\newcommand{\doublespacing}{\setlength{\baselineskip}%
+                           {2.0 \defbaselineskip}}
+% Maths --------------------------------------------------------------------
+\newtheorem{lemma}{Lemma}
+\newtheorem{thm}{Theorem}
+\newtheorem{definition}{Definition}
+\newtheorem{example}{Example}
+\newtheorem{corollary}{Corollary}
+\newtheorem{remark}{Remark}
+%\thispagestyle{empty}
+%--------------------------------------------------------------------------
+
+\begin{document}
+% Title page ---------------------------------------------------------------
+\thispagestyle{empty}
+\begin{titlepage}
+\begin{center}
+\textsc{\Large \textbf{Title}}\\[1.2cm]
+%\textbf{\LARGE  Resilience Metrics of Wireless Sensor Network} \\
+\end{center}
+\begin{center}
+%\vspace{0.2in}
+%{\large Dissertation} \\
+\vspace{0.1in}
+{\Large \it Progress report} \\
+\vspace{0.3in}
+{\Large \bf M.Tech Thesis Evaluation-1} \\
+October 2017\\
+%\vspace{0.3in}
+%{\large \it in\\}
+%\vspace{0.3in}
+%{\Large \bf CSE (Specialization)} \\
+\vspace{0.3in}
+{\large \it by\\}
+\vspace{0.2in}
+{\Large \bf Candidate name}\\
+\vspace{0.2in}
+{\Large (Candidate roll number)}\\
+\vspace{0.4in}
+{\large \it under the supervision of\\}
+\vspace{0.3in}
+{\Large \bf Supervisor name}\\
+\end {center}
+\vspace{0.2in}
+\begin{figure}[h]
+\centerline{\includegraphics[width=1.2in,height=1.6in]{iiitm}}
+\end{figure}
+\vspace{0.1in}
+\begin{center}
+{\Large \bf ABV-INDIAN INSTITUTE OF INFORMATION TECHNOLOGY AND MANAGEMENT\\
+GWALIOR-474 010\\}
+%\vspace{0.2in}
+%{\large \bf Aug-Sep, 2017}
+\end{center}
+\end{titlepage}
+% Synopsis main text -----------------------------------------------------------------
+\newpage
+\setcounter{page}{1}
+\setlinespacing{1}
+\begin{center}
+{\large \bf CANDIDATE'S DECLARATION}
+\end{center}
+I hereby certify that I have properly checked and verified all the items as prescribed in the check-list and ensure that my thesis/report is in proper format as specified in the guideline for thesis preparation.\\
+
+\noindent I also declare that the work containing in this report is my own work. I, understand that plagiarism is defined as any one or combination of the following:
+\begin{enumerate}
+\item To steal and pass off (the ideas or words of another) as one's own
+\item To use (another's production) without crediting the source
+\item To commit literary theft
+\item To present as new and original an idea or product derived from an existing source.
+\end{enumerate}
+I understand that plagiarism involves an intentional act by the plagiarist of using someone else's work/ideas completely/partially and claiming authorship/originality of the work/ideas. Verbatim copy as well as close resemblance to some else's work constitute plagiarism.\\
+
+\noindent I have given due credit to the original authors/sources for all the words, ideas, diagrams, graphics, computer programmes, experiments, results, websites, that are not my original contribution. I have used quotation marks to identify verbatim sentences and given credit to the original authors/sources.\\
+
+\noindent I affirm that no portion of my work is plagiarized, and the experiments and results reported in the report/dissertation/thesis are not manipulated. In the event of a complaint of plagiarism and the manipulation of the experiments and results, I shall be fully responsible and answerable. My faculty supervisor(s) will not be responsible for the same.\vspace{1cm}\\
+
+\noindent Signature:\vspace{1cm}\\
+Name: \\
+Roll No.:\\
+Date: \\
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Ack
+%\begin{center}
+%{\large \bf ACKNOWLEDGEMENT}
+%\end{center}
+%I am highly indebted to {\bf Supervisor name}, and obliged for giving me the autonomy of
+%functioning and experimenting with ideas. I would like to take this opportunity to express my profound gratitude to him
+%not only for his academic guidance but also for his personal interest in my report and constant support coupled with
+%confidence boosting and motivating sessions which proved very fruitful and were instrumental in infusing self-assurance
+%and trust within me. The nurturing and blossoming of the present work is mainly due to his valuable guidance,
+%suggestions, astute judgment, constructive criticism and an eye for perfection. My mentor always answered myriad of my
+%doubts with smiling graciousness and prodigious patience, never letting me feel that I am novices by always lending an
+%ear to my views, appreciating and improving them and by giving me a free hand in my report. It's only
+%because of his overwhelming interest and helpful attitude, the present work has attained the stage it has. \\
+%\\
+%Finally, I am grateful to our Institution and colleagues whose constant encouragement served to renew my spirit,
+%refocus my attention and energy and helped me in carrying out this work.\\ \\ \\ \\
+%\vspace{0.7in}
+%\textbf{Date:}
+%\hspace{3.8in}
+%\textbf{Candidate name}
+%\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+{\large \bf ABSTRACT}
+\end{center}
+
+\clearpage
+\tableofcontents
+%\listoftables
+\newpage
+%\listoffigures
+%\listoftables
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+This section introduces the research area and the motivation behind taking up the proposal.
+\section{Review of key related research}
+This section discusses the recent key related work in the addressed research area along with their shortcomings with respect to your proposed hypothesis.
+\section{Objectives}
+This section outlines the clear research objectives that you plan to achieve during the course of this research.
+\section{Methodology}
+This section explains the proposed methodology that you plan to adopt in order to address the identified shortcomings in the recent related research along with the action plan to meet the set research objectives.
+\section{Expected research outcome}
+This section discusses the expected research outcome in terms of developed new technology/product/algorithms during the course of this research.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setcitestyle{numbers}
+\setlinespacing{1}
+\bibliographystyle{kluwer}
+\newpage
+\bibliography{my}
+\end{document}
