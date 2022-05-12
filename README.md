@@ -1,4 +1,4 @@
-# MTP
+# Software Defect Prediction
 ## Abstract
 Accurately predicting bugs and defects in software units helps the developers and testers to
 find the defective unit and save their efforts in other software developing aspects. Previous studies
