@@ -11,6 +11,7 @@ provide comparison of various variations.
 Keywords: Software defect prediction, Machine Learning, Mixture of experts.
 
 ## Folder structure
+All the datasets are present in dataset folder and all the models resides inside Models folder.
 
 ## Steps to run - 
 * Install the python setup
