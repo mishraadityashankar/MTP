@@ -13,6 +13,6 @@ Keywords: Software defect prediction, Machine Learning, Mixture of experts.
 ## Folder structure
 
 ## Steps to run - 
-*Install the python setup
-*Run any notebook of your choice by clicking the run button of notebook.
-*To use the ME models, import them from models.py and call the functions by passing suitable arguments.
+* Install the python setup
+* Run any notebook of your choice by clicking the run button of notebook.
+* To use the ME models, import them from models.py and call the functions by passing suitable arguments.
