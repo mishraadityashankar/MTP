@@ -10,8 +10,9 @@ study will provide a way to use a popular concept of Mixture of Experts in this 
 provide comparison of various variations.
 Keywords: Software defect prediction, Machine Learning, Mixture of experts.
 
+## Folder structure
 
 ## Steps to run - 
-1- Install the python setup
-2- Run any notebook of your choice by clicking the run button of notebook.
-3- To use the ME models, import them from models.py and call the functions by passing suitable arguments.
+*Install the python setup
+*Run any notebook of your choice by clicking the run button of notebook.
+*To use the ME models, import them from models.py and call the functions by passing suitable arguments.
