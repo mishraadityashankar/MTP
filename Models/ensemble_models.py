@@ -10,11 +10,6 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import BaggingClassifier
 from sklearn.ensemble import AdaBoostClassifier
 
-
-
-# In[1]:
-
-
 def adaBoost(X_train,y_train,X_test,y_test):
     num_trees = 10
     model = AdaBoostClassifier(n_estimators=num_trees, random_state=0)
@@ -24,13 +19,11 @@ def adaBoost(X_train,y_train,X_test,y_test):
       "Accuracy": metrics.accuracy_score(y_test, y_pred_test),
       "F1_score": metrics.f1_score(y_test, y_pred_test, average='macro'),
       "AUC_score": metrics.roc_auc_score(y_test,  y_pred_test),
-      "Prediction": y_pred_test
+      "Prediction": y_pred_test,
+      "MCC" : metrics.matthews_corrcoef(y_test,  y_pred_test)
       
     }
     return result
-
-
-# In[ ]:
 
 
 def bagging(X_train,y_train,X_test,y_test):
@@ -53,7 +46,8 @@ def bagging(X_train,y_train,X_test,y_test):
       "Accuracy": metrics.accuracy_score(y_test, y_pred_test),
       "F1_score": metrics.f1_score(y_test, y_pred_test, average='macro'),
       "AUC_score": metrics.roc_auc_score(y_test,  y_pred_test),
-      "Prediction": y_pred_test
+      "Prediction": y_pred_test,
+      "MCC" : metrics.matthews_corrcoef(y_test,  y_pred_test)
       
     }
     return result

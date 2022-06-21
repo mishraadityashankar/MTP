@@ -1,5 +1,7 @@
 import numpy as np
+from collections import Counter
 def Implicit_ME(X_train,y_train,X_test,y_test,clustSize,experts,gate_classifier):
+ 
     arr_X_train = np.array_split(X_train, clustSize)
     arr_y_train = np.array_split(y_train, clustSize)
     bestLocalExperts = []
@@ -15,13 +17,14 @@ def Implicit_ME(X_train,y_train,X_test,y_test,clustSize,experts,gate_classifier)
         clust_y = arr_y_train[i]
         #index of best classifer by default 0
         best_expert = 0
-        best_score = 0
-        
-        for j in range(len(experts)):
-            local_result = experts[j](clust_X,clust_y,clust_X,clust_y)
-            if(local_result["F1_score"] > best_score):
-                best_expert = j
-                best_score = local_result["F1_score"]
+        best_score = -2
+        counter1 = Counter(clust_y)
+        if(len(counter1)>1):
+            for j in range(len(experts)):
+                local_result = experts[j](clust_X,clust_y,clust_X,clust_y)
+                if(local_result["MCC"] > best_score):
+                    best_expert = j
+                    best_score = local_result["MCC"]
 
         bestLocalExperts.append(best_expert)
             
@@ -44,5 +47,7 @@ def Implicit_ME(X_train,y_train,X_test,y_test,clustSize,experts,gate_classifier)
         count = count + 1
     
     
-    gate_classifier(X_train_new,y_train,X_test_new,y_test)
+    res =  gate_classifier(X_train_new,y_train,X_test_new,y_test)
+    return res
+    
     
