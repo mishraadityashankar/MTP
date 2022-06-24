@@ -34,7 +34,7 @@ def bagging(X_train,y_train,X_test,y_test):
     base_cls = DecisionTreeClassifier()
   
     # no. of base classifier
-    num_trees = 10
+    num_trees = 3
 
     # bagging classifier
     model = BaggingClassifier(base_estimator = base_cls,
